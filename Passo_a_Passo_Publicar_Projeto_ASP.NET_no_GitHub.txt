@@ -1,0 +1,177 @@
+
+# Publicar Projeto ASP.NET 7 no GitHub
+
+## ✅ Pré-requisitos
+
+- Git instalado: https://git-scm.com/
+- Conta no GitHub: https://github.com/
+- Visual Studio Code
+- Projeto ASP.NET já criado
+
+---
+
+## 🧱 Etapa 1: Inicializar o Git no projeto local
+
+1. Abra o terminal no VS Code (`Ctrl + `` `)
+2. Navegue até a pasta do projeto:
+
+```bash
+cd caminho/para/seu/projeto
+```
+
+3. Inicialize o repositório:
+
+```bash
+git init
+```
+
+4. Adicione todos os arquivos:
+
+```bash
+git add .
+```
+
+5. Faça o commit inicial:
+
+```bash
+git commit -m "Commit inicial - projeto ASP.NET"
+```
+
+---
+
+## ☁️ Etapa 2: Criar o repositório no GitHub
+
+1. Acesse: https://github.com/new
+2. Preencha:
+   - Nome do repositório
+   - Público ou privado
+   - **Não crie um README ainda**
+3. Clique em **Create repository**
+
+---
+
+## 🔗 Etapa 3: Conectar repositório local ao GitHub
+
+Copie os comandos sugeridos pelo GitHub após criar o repositório, ou use este exemplo:
+
+```bash
+git remote add origin https://github.com/ThiagoOBJ/meu-projeto-aspnet.git
+git branch -M main
+git push -u origin main
+```
+
+---
+
+## 💻 Etapa 4: Clonar o projeto em outro computador
+
+1. Instale Git e .NET SDK
+2. Clone o repositório:
+
+```bash
+git clone https://github.com/seu-usuario/seu-repositorio.git
+```
+
+3. Acesse o projeto e abra no VS Code:
+
+```bash
+cd seu-repositorio
+code .
+```
+
+4. Rode o projeto:
+
+```bash
+dotnet run
+```
+
+---
+
+## 📌 Dica: Arquivo .gitignore para ASP.NET
+
+Crie um arquivo `.gitignore` na raiz do projeto com:
+
+```gitignore
+bin/
+obj/
+.vscode/
+*.user
+*.suo
+*.db
+*.log
+.env
+```
+
+Ou utilize um modelo completo:  
+https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
+
+
+---
+
+# 🔄 Como atualizar o repositório no GitHub após alterações
+
+## 1. Adicione os arquivos modificados
+
+```bash
+git add .
+```
+
+## 2. Faça um commit com uma mensagem descritiva
+
+```bash
+git commit -m "Descreva aqui o que você alterou"
+```
+
+Exemplos:
+
+```bash
+git commit -m "Adicionei validação no formulário de login"
+git commit -m "Corrigi bug na tela de cadastro"
+```
+
+## 3. Envie as alterações para o GitHub
+
+```bash
+git push
+```
+
+---
+
+## ✅ Exemplo completo:
+
+```bash
+git add .
+git commit -m "Implementado cadastro de usuários"
+git push
+```
+
+---
+
+# 🔽 Como atualizar o projeto local com as alterações do GitHub
+
+## ✅ Situação
+Se você já clonou o repositório em outro computador e deseja manter os arquivos atualizados com as mudanças feitas em outro lugar, siga os passos abaixo:
+
+## 1. Acesse a pasta do projeto no terminal
+
+```bash
+cd caminho/para/seu/projeto
+
+Execute o comando para baixar as atualizações do GitHub
+git pull
+
+Esse comando traz as últimas alterações feitas no repositório remoto (GitHub) para sua máquina local.
+
+⚠️ Dica: Se você fez mudanças locais ainda não salvas (não commitadas)
+Antes de executar git pull, é recomendado salvar suas alterações locais com:
+
+git add .
+git commit -m "Salvando mudanças locais antes de atualizar"
+git pull
+
+
+Comando alternativo: Verificar se há atualizações sem aplicar
+git fetch
+
+Depois veja as diferenças com:
+git diff origin/main
+.

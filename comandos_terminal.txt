@@ -1,0 +1,9 @@
+mkdir - cria pasta
+dotnet new -h - mostra os comandos
+dotnet new - monstra as opções de projeto
+dotnet new list - lista os projetos
+dotnet new web -n nomeprojeto - cria um projeto
+code . - abre o projeto no vs code
+dotnet build
+
+1395

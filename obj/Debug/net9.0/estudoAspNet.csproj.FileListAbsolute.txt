@@ -25,3 +25,4 @@ c:\dev\estudoAspNet\obj\Debug\net9.0\refint\estudoAspNet.dll
 c:\dev\estudoAspNet\obj\Debug\net9.0\estudoAspNet.pdb
 C:\dev\estudoAspNet\obj\Debug\net9.0\estudoAspNet.genruntimeconfig.cache
 C:\dev\estudoAspNet\obj\Debug\net9.0\ref\estudoAspNet.dll
+c:\dev\estudoAspNet\obj\Debug\net9.0\estudoAspNet.sourcelink.json
