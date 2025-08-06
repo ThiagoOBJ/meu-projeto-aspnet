@@ -6,4 +6,4 @@ dotnet new web -n nomeprojeto - cria um projeto
 code . - abre o projeto no vs code
 dotnet build
 
-1401
+1401.
