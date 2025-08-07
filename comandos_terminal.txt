@@ -8,4 +8,4 @@ dotnet build
 dotnet new MVC -h - mostra as configurações que posso adicionar no meu projeto MVC
 dotnet new mvc -n NomeProjeto --auth Individual - cria um projeto com nome e autenticação Individual
 
-1401
+1401.
