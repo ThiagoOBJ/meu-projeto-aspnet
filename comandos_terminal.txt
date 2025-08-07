@@ -5,5 +5,7 @@ dotnet new list - lista os projetos
 dotnet new web -n nomeprojeto - cria um projeto
 code . - abre o projeto no vs code
 dotnet build
+dotnet new MVC -h - mostra as configurações que posso adicionar no meu projeto MVC
+dotnet new mvc -n NomeProjeto --auth Individual - cria um projeto com nome e autenticação Individual
 
 1401
